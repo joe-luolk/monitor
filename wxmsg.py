@@ -62,7 +62,7 @@ if __name__=="__main__":
        messages='['+title+']'+message
        get_hosts='qyapi.weixin.qq.com'
        get_uris='/cgi-bin/gettoken?'
-       get_params=urllib.urlencode({'corpid':'wwe56eb1562fe2a5b4','corpsecret':'A_sA2liqO85fXEeumn1Z8oiPK7OxNoKpTU4HXv11uQA'})
+       get_params=urllib.urlencode({'corpid':'your corpid','corpsecret':'your secret'})
        token=get_token(get_hosts,get_uris,get_params)
        post_hosts='qyapi.weixin.qq.com'
        post_uris='/cgi-bin/message/send?'
@@ -70,7 +70,7 @@ if __name__=="__main__":
        bodys={}
        bodys['touser']=to
        bodys['msgtype']='text'
-       bodys['agentid']=1000002
+       bodys['agentid']=your id
        bodys['text']={'content': messages}
        bodys['safe']='0'
        send_wx_message(post_hosts,post_uris,post_params,bodys)
