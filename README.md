@@ -1,4 +1,3 @@
-                                                       MONITOR
 wxmsg: 微信推送消息脚本，可用于zabbix、nagios等监控系统发送微信告警
 >1.需要先注册用于推送消息的微信公众号  
 >2.使用公众号相关设置替换脚本对应的corpid、corpsecret和agentid  
